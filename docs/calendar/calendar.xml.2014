@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<events init="0" rinit="1/1/2000" from="1/1/2000">
+  <range from="9/12/2014" to="9/14/2014" state="event" catagory="">Williamsburg Campout</range>
+  <range from="9/19/2014" to="9/20/2014" state="event" catagory="">OA Fall Fellowship</range>
+  <range from="10/10/2014" to="10/11/2014" state="event" catagory="">Council Camporee</range>
+  <range from="11/7/2014" to="11/9/2014" state="event" catagory="">Backpacking Campout</range>
+  <range from="12/5/2014" to="12/7/2014" state="event" catagory="">Nauticus Campout</range>
+  <range from="1/16/2015" to="1/18/2015" state="event" catagory="">Aviation Campout</range>
+  <range from="2/13/2015" to="2/14/2015" state="event" catagory="">Scout Skills Campout</range>
+  <range from="3/13/2015" to="3/15/2015" state="event" catagory="">OBX Campout</range>
+  <range from="3/20/2015" to="3/21/2015" state="event" catagory="">OA Pow-Wow</range>
+  <range from="4/10/2015" to="4/11/2015" state="event" catagory="">District Camporee</range>
+  <range from="4/17/2015" to="4/18/2015" state="event" catagory="">OA Conclave</range>
+  <range from="5/8/2015" to="5/10/2015" state="event" catagory="">Whitewater Campout</range>
+  <range from="5/15/2015" to="5/16/2015" state="event" catagory="">OA Spring Inductions</range>
+  <range from="6/21/2015" to="6/26/2015" state="event" catagory="">Summer Camp</range>
+  <range from="7/10/2015" to="7/12/2015" state="event" catagory="">Tubing/Kayaking Campout</range>
+  <range from="8/7/2015" to="8/8/2015" state="event" catagory="">Motorboating Campout</range>
+  <day date="9/1/2014" state="holiday" catagory="">Labor Day&lt;bR&gt;&lt;bR&gt;WCPSS Holiday</day>
+  <day date="10/31/2014" state="holiday" catagory="">Halloween</day>
+  <day date="11/11/2014" state="holiday" catagory="">Veterans Day</day>
+  <day date="11/27/2014" state="holiday" catagory="">Thanksgiving</day>
+  <day date="12/22/2014" state="holiday" catagory="">WCPSS Holiday</day>
+  <day date="12/25/2014" state="holiday" catagory="">Christmas</day>
+  <day date="12/29/2014" state="holiday" catagory="">WCPSS Holiday</day>
+  <day date="1/1/2015" state="holiday" catagory="">New Year's Day</day>
+  <day date="1/19/2015" state="holiday" catagory="">MLK Day&lt;bR&gt;&lt;bR&gt;WCPSS Holiday</day>
+  <day date="2/14/2015" state="holiday" catagory="">Valentine's Day</day>
+  <day date="2/16/2015" state="holiday" catagory="">President's Day&lt;bR&gt;&lt;bR&gt;WCPSS Holiday</day>
+  <day date="3/23/2015" state="holiday" catagory="">WCPSS Holiday</day>
+  <day date="4/5/2015" state="holiday" catagory="">Easter</day>
+  <day date="5/10/2015" state="holiday" catagory="">Mother's Day</day>
+  <day date="5/26/2015" state="holiday" catagory="">Memorial Day&lt;bR&gt;&lt;bR&gt;WCPSS Holiday</day>
+  <day date="6/21/2015" state="holiday" catagory="">Father's Day</day>
+  <day date="7/4/2015" state="holiday" catagory="">Independence Day</day>
+  <day date="9/4/2014" state="event" catagory="">Roundtable</day>
+  <day date="9/7/2014" state="event" catagory="">ASM Meeting</day>
+  <day date="9/8/2014" state="event" catagory="">PLC&lt;bR&gt;&lt;bR&gt;Troop Meeting</day>
+  <day date="9/11/2014" state="event" catagory="">OA Meeting</day>
+  <day date="9/15/2014" state="event" catagory="">Troop Meeting&lt;bR&gt;&lt;bR&gt;Troop Committee</day>
+  <day date="9/22/2014" state="event" catagory="">Troop Meeting</day>
+  <day date="9/29/2014" state="event" catagory="">Troop Meeting</day>
+  <day date="10/2/2014" state="event" catagory="">Roundtable</day>
+  <day date="10/5/2014" state="event" catagory="">ASM Meeting</day>
+  <day date="10/6/2014" state="event" catagory="">PLC&lt;bR&gt;&lt;bR&gt;Troop Meeting&lt;bR&gt;&lt;bR&gt;Troop Elections</day>
+  <day date="10/9/2014" state="event" catagory="">OA Meeting</day>
+  <day date="10/13/2014" state="event" catagory="">Troop Meeting&lt;bR&gt;&lt;bR&gt;Troop Committee</day>
+  <day date="10/18/2014" state="event" catagory="">OA Annual Banquet&lt;bR&gt;&lt;bR&gt;OA Vigil</day>
+  <day date="10/20/2014" state="event" catagory="">Troop Meeting</day>
+  <day date="10/27/2014" state="event" catagory="">Troop Meeting</day>
+  <day date="11/1/2014" state="event" catagory="">Stream Cleanup</day>
+  <day date="11/2/2014" state="event" catagory="">ASM Meeting</day>
+  <day date="11/3/2014" state="event" catagory="">PLC&lt;bR&gt;&lt;bR&gt;Troop Meeting</day>
+  <day date="11/6/2014" state="event" catagory="">Roundtable</day>
+  <day date="11/10/2014" state="event" catagory="">Troop Meeting&lt;bR&gt;&lt;bR&gt;Troop Committee</day>
+  <day date="11/13/2014" state="event" catagory="">OA Meeting</day>
+  <day date="11/17/2014" state="event" catagory="">Troop Meeting</day>
+  <day date="11/24/2014" state="event" catagory="">Court of Honor</day>
+  <day date="11/29/2014" state="event" catagory="">OA 50 Mile Hike</day>
+  <day date="12/1/2014" state="event" catagory="">Troop Meeting</day>
+  <day date="12/4/2014" state="event" catagory="">District Dinner</day>
+  <day date="12/7/2014" state="event" catagory="">ASM Meeting</day>
+  <day date="12/8/2014" state="event" catagory="">PLC&lt;bR&gt;&lt;bR&gt;Troop Committee&lt;bR&gt;&lt;bR&gt;Troop Meeting</day>
+  <day date="12/11/2014" state="event" catagory="">OA Meeting</day>
+  <day date="12/15/2014" state="event" catagory="">Troop Meeting</day>
+  <day date="1/4/2015" state="event" catagory="">ASM Meeting</day>
+  <day date="1/5/2015" state="event" catagory="">PLC&lt;bR&gt;&lt;bR&gt;Troop Meeting</day>
+  <day date="1/8/2015" state="event" catagory="">Roundtable</day>
+  <day date="1/12/2015" state="event" catagory="">Troop Meeting&lt;bR&gt;&lt;bR&gt;Troop Committee</day>
+  <day date="1/15/2015" state="event" catagory="">OA Meeting</day>
+  <day date="1/26/2015" state="event" catagory="">Troop Meeting</day>
+  <day date="1/31/2015" state="event" catagory="">Troop Workday</day>
+  <day date="2/2/2015" state="event" catagory="">Troop Meeting</day>
+  <day date="2/5/2015" state="event" catagory="">Roundtable</day>
+  <day date="2/8/2015" state="event" catagory="">Scout Sunday&lt;bR&gt;&lt;bR&gt;ASM Meeting</day>
+  <day date="2/9/2015" state="event" catagory="">PLC&lt;bR&gt;&lt;bR&gt;Troop Committee&lt;bR&gt;&lt;bR&gt;Troop Meeting</day>
+  <day date="2/12/2015" state="event" catagory="">OA Meeting</day>
+  <day date="2/23/2015" state="event" catagory="">Court of Honor</day>
+  <day date="3/1/2015" state="event" catagory="">ASM Meeting</day>
+  <day date="3/2/2015" state="event" catagory="">PLC&lt;bR&gt;&lt;bR&gt;Troop Meeting</day>
+  <day date="3/5/2015" state="event" catagory="">Roundtable</day>
+  <day date="3/9/2015" state="event" catagory="">Troop Committee&lt;bR&gt;&lt;bR&gt;Troop Meeting</day>
+  <day date="3/12/2015" state="event" catagory="">OA Meeting</day>
+  <day date="3/16/2015" state="event" catagory="">Troop Meeting</day>
+  <day date="3/30/2015" state="event" catagory="">Troop Meeting</day>
+  <day date="4/2/2015" state="event" catagory="">Roundtable</day>
+  <day date="4/7/2015" state="event" catagory="">Troop Meeting&lt;bR&gt;&lt;bR&gt;Troop Elections</day>
+  <day date="4/9/2015" state="event" catagory="">OA Meeting</day>
+  <day date="4/12/2015" state="event" catagory="">ASM Meeting</day>
+  <day date="4/13/2015" state="event" catagory="">PLC&lt;bR&gt;&lt;bR&gt;Troop Committee&lt;bR&gt;&lt;bR&gt;Troop Meeting</day>
+  <day date="4/20/2015" state="event" catagory="">Troop Meeting</day>
+  <day date="4/27/2015" state="event" catagory="">Troop Meeting</day>
+  <day date="5/2/2015" state="event" catagory="">Stream Cleanup</day>
+  <day date="5/3/2015" state="event" catagory="">ASM Meeting</day>
+  <day date="5/4/2015" state="event" catagory="">PLC&lt;bR&gt;&lt;bR&gt;Troop Meeting</day>
+  <day date="5/7/2015" state="event" catagory="">Roundtable</day>
+  <day date="5/11/2015" state="event" catagory="">Troop Committee&lt;bR&gt;&lt;bR&gt;Troop Meeting</day>
+  <day date="5/14/2015" state="event" catagory="">OA Meeting</day>
+  <day date="5/18/2015" state="event" catagory="">Court of Honor</day>
+  <day date="6/1/2015" state="event" catagory="">Troop Meeting</day>
+  <day date="6/4/2015" state="event" catagory="">Roundtable</day>
+  <day date="6/6/2015" state="event" catagory="">Troop Workday</day>
+  <day date="6/7/2015" state="event" catagory="">ASM Meeting</day>
+  <day date="6/8/2015" state="event" catagory="">PLC&lt;bR&gt;&lt;bR&gt;Troop Meeting</day>
+  <day date="6/11/2015" state="event" catagory="">OA Meeting</day>
+  <day date="6/15/2015" state="event" catagory="">Troop Meeting&lt;bR&gt;&lt;bR&gt;Troop Committee</day>
+  <day date="6/16/2015" state="event" catagory="">Troop Meeting</day>
+  <day date="6/29/2015" state="event" catagory="">Troop Meeting</day>
+  <day date="7/5/2015" state="event" catagory="">ASM Meeting</day>
+  <day date="7/6/2015" state="event" catagory="">PLC&lt;bR&gt;&lt;bR&gt;Troop Meeting</day>
+  <day date="7/13/2015" state="event" catagory="">Troop Meeting&lt;bR&gt;&lt;bR&gt;Troop Committee</day>
+  <day date="7/20/2015" state="event" catagory="">Troop Meeting</day>
+  <day date="7/27/2015" state="event" catagory="">Troop Meeting</day>
+  <day date="8/2/2015" state="event" catagory="">ASM Meeting</day>
+  <day date="8/3/2015" state="event" catagory="">PLC&lt;bR&gt;&lt;bR&gt;Troop Meeting</day>
+  <day date="8/6/2015" state="event" catagory="">Roundtable</day>
+  <day date="8/10/2015" state="event" catagory="">Troop Meeting&lt;bR&gt;&lt;bR&gt;Troop Committee</day>
+  <day date="8/13/2015" state="event" catagory="">OA Meeting</day>
+  <day date="8/17/2015" state="event" catagory="">Troop Meeting</day>
+  <day date="8/24/2015" state="event" catagory="">Court of Honor</day>
+  <day date="8/31/2015" state="event" catagory="">Troop Meeting</day>
+  <coffeecupcalendar version="3.2">
+    <calendar x="0" y="0" w="200" h="220" bordersolid="f" borderdashed="t" bordercolor="0x000000" transition="0" docaption="t" titleformatfont="Arial" captionfont="Arial" titleformatcolor="0x000000" captionfontbkcolor="0xC0C0C0" captionfontcolor="0x000000" bkimage="C:\Documents and Settings\sthomas\My Documents\" mouseoversound="C:\Documents and Settings\sthomas\My Documents\" calendarlabel="Troop 214 Calendar" months="January,February,March,April,May,June,July,August,September,October,November,December" days="Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday" showmonthyear="t" daymax="3" dateformat="mm/dd/yy" defaulttextfont="arial" defaulttextcolor="0x000000" defaulttextbold="f" defaulttextitalic="f" defaulttextsize="8" defaulttextalign="center" titletextfont="" titletextcolor="0x000000" titletextbold="f" titletextitalic="f" titletextsize="0" selectedtextcolor="0x000000" disabledtextcolor="0xFFFFFF" dayupbkfillclr="0xFFFFFF" dayupbkfillalpha="100" dayupbkdogradient="t" dayupbkgradclr="0xC0C0C0" dayupbkgradalpha="100" dayupbkgradangle="70" dayupbkbdrcolor="0x000000" dayoverbkfillclr="0x808080" dayoverbkfillalpha="100" dayoverbkdogradient="f" dayoverbkgradclr="0xC0C0C0" dayoverbkgradalpha="100" dayoverbkgradangle="70" dayoverbkbdrcolor="0xFF0000" dayselbkfillclr="0xFF0000" dayselbkfillalpha="100" dayselbkdogradient="t" dayselbkgradclr="0xC0C0C0" dayselbkgradalpha="100" dayselbkgradangle="70" dayselbkbdrcolor="0x000000" daydisbkfillclr="0x808080" daydisbkfillalpha="100" daydisbkdogradient="f" daydisbkgradclr="0x808080" daydisbkgradalpha="100" daydisbkgradangle="70" daydisbkbdrcolor="0x000000" weekendupbkfillclr="0x808080" weekendupbkfillalpha="100" weekendupbkdogradient="f" weekendupbkgradclr="0xC0C0C0" weekendupbkgradalpha="100" weekendupbkgradangle="70" weekendupbkbdrcolor="0x000000" weekendoverbkfillclr="0x808080" weekendoverbkfillalpha="100" weekendoverbkdogradient="f" weekendoverbkgradclr="0xC0C0C0" weekendoverbkgradalpha="100" weekendoverbkgradangle="70" weekendoverbkbdrcolor="0x000000" specialupbkfillclr="0x808080" specialupbkfillalpha="100" specialupbkdogradient="f" specialupbkgradclr="0x808080" specialupbkgradalpha="100" specialupbkgradangle="70" specialupbkbdrcolor="0x000000" specialoverbkfillclr="0x808080" specialoverbkfillalpha="100" specialoverbkdogradient="f" specialoverbkgradclr="0x808080" specialoverbkgradalpha="100" specialoverbkgradangle="70" specialoverbkbdrcolor="0x000000" hdayupbkfillclr="0x00FF00" hdayupbkfillalpha="100" hdayupbkdogradient="t" hdayupbkgradclr="0xC0C0C0" hdayupbkgradalpha="100" hdayupbkgradangle="70" hdayupbkbdrcolor="0x000000" hdayoverbkfillclr="0xFFFF00" hdayoverbkfillalpha="100" hdayoverbkdogradient="t" hdayoverbkgradclr="0xC0C0C0" hdayoverbkgradalpha="100" hdayoverbkgradangle="70" hdayoverbkbdrcolor="0x000000" eventupbkfillclr="0x0000FF" eventupbkfillalpha="100" eventupbkdogradient="t" eventupbkgradclr="0xC0C0C0" eventupbkgradalpha="100" eventupbkgradangle="70" eventupbkbdrcolor="0x000000" eventoverbkfillclr="0x800080" eventoverbkfillalpha="100" eventoverbkdogradient="t" eventoverbkgradclr="0xC0C0C0" eventoverbkgradalpha="100" eventoverbkgradangle="70" eventoverbkbdrcolor="0x000000">
+      <dateviewer x="5" y="5" w="190" h="210" bkdomask="t" bkdobk="t" bkdogradient="t" bkfillclr="0x808080" bkfillalpha="100" bkgradclr="0xc0c0c0" bkgradalpha="100" bkgradangle="50" bkdoimg="f" bkimg="" bkdobdr="t" bkbdrsolid="t" bkbdrcolor="0x808080"></dateviewer>
+    </calendar>
+  </coffeecupcalendar>
+</events>
