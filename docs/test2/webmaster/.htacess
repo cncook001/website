@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "webmaster"
+AuthUserFile "/home1/firewal2/.htpasswds/public_html/aerofrost/bsatroop/webmaster/passwd"
+require valid-user
