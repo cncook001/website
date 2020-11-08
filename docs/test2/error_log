@@ -1,4 +1,0 @@
-[29-Jul-2013 10:56:56] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'firewal2'@'localhost' (using password: YES) in /home/tr00p/public_html/test2/includes/dbconnect.inc on line 8
-[29-Jul-2013 10:59:47] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'firewal2'@'localhost' (using password: YES) in /home/tr00p/public_html/test2/includes/dbconnect.inc on line 8
-[29-Jul-2013 11:00:10] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'firewal2'@'localhost' (using password: YES) in /home/tr00p/public_html/test2/includes/dbconnect.inc on line 8
-[26-Sep-2018 04:29:09 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'firewal2'@'localhost' (using password: YES) in /home/tr00p/public_html/test2/includes/dbconnect.inc on line 8
