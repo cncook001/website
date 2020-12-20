@@ -1,13 +1,14 @@
 #rotating-item-wrapper {
-  position: relative;
-  width: 710px;
-  height: 470px;
+	position: relative;
+	width: 710px;
+	height: 470px;
 }
 .rotating-item {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
 }
+
