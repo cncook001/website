@@ -1,22 +1,87 @@
-BODY { font-family : Tahoma, Verdana, Arial, Helvetica, sans-serif; }
-
-a:link    {	text-decoration : underline; color : blue; }
-a:visited { text-decoration : underline; color : blue; }
-a:active  {	text-decoration : underline; color : blue; }
-a:hover   {	text-decoration : underline; color : blue;}
-
-.vbc  { font-size: 16pt; font-weight: bold; text-align: center; } 
-
-.lb   { font-size: 12pt; font-weight: bold; } 
-.lbc  { font-size: 12pt; font-weight: bold; text-align: center; } 
-
-.sl   { font-size: 9pt; } 
-.sc   { font-size: 9pt; text-align: center; } 
-.sr   { font-size: 9pt; text-align: right; } 
-.sbl  { font-size: 9pt; font-weight: bold; } 
-.sbc  { font-size: 9pt; font-weight: bold; text-align: center; } 
-.sbr  { font-size: 9pt; font-weight: bold; text-align: right; } 
-
-.mb   { font-size: 11pt; font-weight: bold; } 
-.mc   { font-size: 11pt; text-align: center; } 
-.mbc  { font-size: 11pt; font-weight: bold; text-align: center; } 
+BODY {
+  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+
+a:link {
+  text-decoration: underline;
+  color: blue;
+}
+
+a:visited {
+  text-decoration: underline;
+  color: blue;
+}
+
+a:active {
+  text-decoration: underline;
+  color: blue;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.vbc {
+  font-size: 16pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+.lb {
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+.lbc {
+  font-size: 12pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sl {
+  font-size: 9pt;
+}
+
+.sc {
+  font-size: 9pt;
+  text-align: center;
+}
+
+.sr {
+  font-size: 9pt;
+  text-align: right;
+}
+
+.sbl {
+  font-size: 9pt;
+  font-weight: bold;
+}
+
+.sbc {
+  font-size: 9pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sbr {
+  font-size: 9pt;
+  font-weight: bold;
+  text-align: right;
+}
+
+.mb {
+  font-size: 11pt;
+  font-weight: bold;
+}
+
+.mc {
+  font-size: 11pt;
+  text-align: center;
+}
+
+.mbc {
+  font-size: 11pt;
+  font-weight: bold;
+  text-align: center;
+}
