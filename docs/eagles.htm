@@ -6,6 +6,18 @@
     <script language="JavaScript" src="control.js"></script>
     <link rel="stylesheet" href="textstyle.css" type="text/css">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {}
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
         table,
         th,
         td {
@@ -14,13 +26,21 @@
             padding: 2px
         }
 
-        table.center {
-            margin-left: auto;
+        table.left {
+            margin-left: 600px;
             margin-right: auto;
+            float: center
+        }
+
+        table.right {
+            margin-left: 200px;
+            margin-right: auto;
+            float: center
         }
 
         table {
             border-spacing: 5px;
+            float: left;
         }
 
         th {
@@ -44,8 +64,7 @@
 
     <div style="overflow-x:auto;">
         <!--Start Page Here -->
-
-        <table class="center" width="300">
+        <table class="left" width="auto">
             <tr>
                 <th>Eagle Number</th>
                 <th>Name</th>
@@ -53,6 +72,7 @@
             </tr>
             <tr>
                 <td>1</td>
+
                 <td>Frank B. Day</td>
                 <td>1969</td>
             </tr>
@@ -882,7 +902,18 @@
                 <td>2021</td>
             </tr>
         </table>
-
+        <table class="right" width="auto">
+            <tr>
+                <th>Eagle Number</th>
+                <th>Name</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Mackenzie "France" McGuinness </td>
+                <td>2021</td>
+            </tr>
+        </table>
         <!--End Page Here -->
     </div>
     <script language="JavaScript">
