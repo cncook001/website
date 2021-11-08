@@ -1,20 +1,21 @@
 """ Build index from directory listing
-
-make_index.py </path/to/directory> [--header <header text>]
+make_index.py --path </path/to/directory> [--directory <directory>]
 """
 from __future__ import print_function
-import os.path, time
+from mako.template import Template
+import argparse
+import os
+import os.path
+import time
 
 INDEX_TEMPLATE = r"""
-
 <html>
 <head>
-<title>${header}</title>
-<meta name="description" content="${header}"/>
-
+<title>${directory}</title>
+<meta name="description" content="${directory}"/>
 </head>
 <body>
-    <h2>Index of ${header}</h2>
+    <h2>Index of ${directory}</h2>
     <p>
     <table>
         <tbody>
@@ -40,7 +41,6 @@ INDEX_TEMPLATE = r"""
             <tr>
                 <th colspan="5"><hr></th>
             </tr>
-
             % for name in dirnames:
             <tr>
                 <td valign="top"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAd5JREFUeNqMU79rFUEQ/vbuodFEEkzAImBpkUabFP4ldpaJhZXYm/RiZWsv/hkWFglBUyTIgyAIIfgIRjHv3r39MePM7N3LcbxAFvZ2b2bn22/mm3XMjF+HL3YW7q28YSIw8mBKoBihhhgCsoORot9d3/ywg3YowMXwNde/PzGnk2vn6PitrT+/PGeNaecg4+qNY3D43vy16A5wDDd4Aqg/ngmrjl/GoN0U5V1QquHQG3q+TPDVhVwyBffcmQGJmSVfyZk7R3SngI4JKfwDJ2+05zIg8gbiereTZRHhJ5KCMOwDFLjhoBTn2g0ghagfKeIYJDPFyibJVBtTREwq60SpYvh5++PpwatHsxSm9QRLSQpEVSd7/TYJUb49TX7gztpjjEffnoVw66+Ytovs14Yp7HaKmUXeX9rKUoMoLNW3srqI5fWn8JejrVkK0QcrkFLOgS39yoKUQe292WJ1guUHG8K2o8K00oO1BTvXoW4yasclUTgZYJY9aFNfAThX5CZRmczAV52oAPoupHhWRIUUAOoyUIlYVaAa/VbLbyiZUiyFbjQFNwiZQSGl4IDy9sO5Wrty0QLKhdZPxmgGcDo8ejn+c/6eiK9poz15Kw7Dr/vN/z6W7q++091/AQYA5mZ8GYJ9K0AAAAAASUVORK5CYII= "
@@ -70,35 +70,55 @@ INDEX_TEMPLATE = r"""
 
 EXCLUDED = ['index.html']
 
-import os
-import argparse
 
 # May need to do "pip install mako"
-from mako.template import Template
 
-def fun(dir,rootdir):
-    print('Processing: '+dir)
-    filenames = [fname for fname in sorted(os.listdir(dir))
-              if fname not in EXCLUDED and os.path.isfile(dir+fname)]
-    dirnames = [fname for fname in sorted(os.listdir(dir))
-            if fname not in EXCLUDED  ]
+def fun(path, rootdir, directory):
+
+    print('Processing: '+path)
+    filenames = [fname for fname in sorted(os.listdir(path))
+                 if fname not in EXCLUDED and os.path.isfile(path+fname)]
+    dirnames = [fname for fname in sorted(os.listdir(path))
+                if fname not in EXCLUDED]
     dirnames = [fname for fname in dirnames if fname not in filenames]
-#    header = os.path.basename(dir)
-    f = open(dir+'/index.html','w')
-    print(Template(INDEX_TEMPLATE).render(dirnames=dirnames,filenames=filenames, header=dir,ROOTDIR=rootdir,time=time.ctime(os.path.getctime(dir))),file=f)
+
+    if not directory:
+        directory = os.path.basename(path)
+
+    f = open(path+'/index.html', 'w')
+    print(Template(INDEX_TEMPLATE).render(
+     dirnames=dirnames,
+     filenames=filenames,
+     directory=directory,
+     ROOTDIR=rootdir,
+     time=time.ctime(os.path.getctime(path))
+     ), file=f)
     f.close()
+
     for subdir in dirnames:
         try:
-            fun(dir+subdir+"/",rootdir+'../')
+            fun(path+subdir+"/", rootdir+'../', directory+"/"+subdir+"/")
         except:
             pass
 
-def main():
+
+def get_args():
+    """ Return the parsed command-line arguments"""
     parser = argparse.ArgumentParser()
-    parser.add_argument("directory")
-    parser.add_argument("--header")
+    parser.add_argument("--path", help='Path to start directory indexing')
+    parser.add_argument(
+        "--directory", help='Use this instead of showing the inital path from being displayed')
+
     args = parser.parse_args()
-    fun(args.directory+'/','../')
+
+    return args
+
+
+def main():
+    args = get_args()
+
+    fun(args.path+'/', '../', args.directory)
+
 
 if __name__ == '__main__':
     main()
