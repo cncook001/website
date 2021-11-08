@@ -3,7 +3,7 @@
 make_index.py --path </path/to/directory> [--directory <directory>]
 """
 from __future__ import print_function
-from mako.template import Template
+#from mako.template import Template
 import argparse
 import os
 import os.path
@@ -81,24 +81,36 @@ EXCLUDED = ['index.html']
 def fun(path, rootdir, directory):
 
     print('Processing: '+path)
-    filenames = [fname for fname in sorted(os.listdir(path))
-                 if fname not in EXCLUDED and os.path.isfile(path+fname)]
-    dirnames = [fname for fname in sorted(os.listdir(path))
-                if fname not in EXCLUDED]
-    dirnames = [fname for fname in dirnames if fname not in filenames]
+    # filenames = [fname for fname in sorted(os.listdir(path))
+    #              if fname not in EXCLUDED and os.path.isfile(path+fname)]
+    # dirnames = [fname for fname in sorted(os.listdir(path))
+    #             if fname not in EXCLUDED]
+    # dirnames = [fname for fname in dirnames if fname not in filenames]
+
+    # for path, dirnames, files in os.walk(.):
+    #     print(f'Found directory: {dirpath}')
+    # for file_name in files:
+    #     print(file_name)
+
+    for root, dirs, files in os.walk(path, topdown=False):
+        for name in files:
+            print(os.path.join(root, name))
+        for name in dirs:
+            print('Found directory:')
+            print(os.path.join(root, name))
 
     if not directory:
         directory = os.path.basename(path)
 
-    f = open(path+'/index.html', 'w')
-    print(Template(INDEX_TEMPLATE).render(
-     dirnames=dirnames,
-     filenames=filenames,
-     directory=directory,
-     ROOTDIR=rootdir,
-     time=time.ctime(os.path.getctime(path))
-     ), file=f)
-    f.close()
+    # f = open(path+'/index.html', 'w')
+    # print(Template(INDEX_TEMPLATE).render(
+    #  dirnames=dirnames,
+    #  filenames=filenames,
+    #  directory=directory,
+    #  ROOTDIR=rootdir,
+    #  time=time.ctime(os.path.getctime(path))
+    #  ), file=f)
+    # f.close()
 
     for subdir in dirnames:
         try:
