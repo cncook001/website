@@ -22,3 +22,10 @@ Install the GitHub pull requests extension following this guide https://code.vis
 
 Clone this repository to your local computer by following these instructions in the "Setting up a repository" section. Use this URL instead of the one provided: https://github.com/Troop214-Raleigh/website.git
 
+## Create changes
+
+Make a GitHub branch with your changes.
+
+Create a pull request
+
+A webmaster will review and merge your changes and make them live on the site.
