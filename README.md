@@ -26,6 +26,6 @@ Clone this repository to your local computer by following these instructions in 
 
 Make a GitHub branch with your changes.
 
-Create a pull request
+Create a pull request.
 
 A webmaster will review and merge your changes and make them live on the site.
