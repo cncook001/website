@@ -14,6 +14,10 @@ Windows instructions are here https://code.visualstudio.com/docs/setup/windows
 
 Mac instructions are here https://code.visualstudio.com/docs/setup/mac
 
+## Enable Automatic Formatting on Save
+
+On this page https://www.learnitweb.com/articles/auto-format-code-in-visual-studio-code-on-save-using-prettier/ follow the instructions. This will install the Prettier code formating extension and automatically apply it when saving files.
+
 ## Install GitHub extension
 
 Install the GitHub pull requests extension following this guide https://code.visualstudio.com/docs/editor/github
