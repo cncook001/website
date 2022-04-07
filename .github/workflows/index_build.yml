@@ -1,51 +1,52 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: Rebild Index files
+name: Rebuild Index files
 
 on:
-  push:
-    branches: [ master ]
   pull_request:
-    branches: [ master ]
+  push:
+    branches:
+      - main
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
   
-permissions:
-  contents: read
-
 jobs:
   build:
 
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python 3.10
-      uses: actions/setup-python@v3
-      with:
-        python-version: "3.10"
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install flake8 pytest mako
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Rebuild index.html files in the documents directory
-      run: |
-        python $GITHUB_WORKSPACE/make_index.py --path $GITHUB_WORKSPACE/docs/documents --directory documents
-    - name: setup git config
-      run: |
-        # setup the username and email.
-        git config user.name "GitHub Actions Bot"
-        git config user.email "<>"
-    - name: commit
-      run: |
-        # Stage the index files, commit and push
-        git add docs/documents/*
-        git commit -m "new documents index commit"
-    - name: push to master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        git push origin main
+        - uses: actions/checkout@v2
+          with:
+            ref: ${{ github.head_ref }}
+        - name: Set up Python 3.10
+          uses: actions/setup-python@v3
+          with:
+            python-version: "3.10"
+        - name: Install dependencies
+          run: |
+            python -m pip install --upgrade pip
+            pip install flake8 pytest mako
+            if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        - name: Rebuild index.html files in the documents directory
+          run: |
+            python $GITHUB_WORKSPACE/make_index.py --path $GITHUB_WORKSPACE/docs/documents --directory documents
+        - name: setup git config
+          run: |
+            # setup the username and email.
+            git config user.name "GitHub Actions Bot"
+            git config user.email "<>"
+        - name: commit
+          run: |
+            # Stage the index files, commit and push
+            git add docs/documents/*
+            if git status | grep -q "Changes to be committed"
+              then
+                git commit --message "new documents index commit"
+                echo "Pushing git commit"
+                git push origin main
+            else
+             echo "No changes detected"
+            fi
