@@ -46,4 +46,4 @@ jobs:
         git commit -m "new documents index commit"
     - name: push to master
       run: |
-        git push origin master
+        git push origin main
