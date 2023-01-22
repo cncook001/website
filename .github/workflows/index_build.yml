@@ -4,7 +4,6 @@
 name: Rebuild Index files
 
 on:
-  pull_request:
   push:
     branches:
       - main
